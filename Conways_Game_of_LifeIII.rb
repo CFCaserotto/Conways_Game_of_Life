@@ -13,7 +13,7 @@ O X X
 X O O
 O O X
 =end
-
+#test
 def make2DArray(cols,rows)
     grid = Array.new(cols) { Array.new(rows, 'O')}
     for x in 0...grid.length
