@@ -81,10 +81,7 @@ def draw(grid)
     puts "----------------------------------------"
 end
 
-
-
 # Given matrix
-
 block = [[0, 0, 0, 0], 
          [0, 1, 1, 0],
          [0, 1, 1, 0],
@@ -105,7 +102,6 @@ toad = [[0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0], 
         [0, 0, 0, 0, 0, 0], 
        ]
-#m = toad
 
 puts "Insert matrix length"
 r = gets.chomp.rstrip.to_i
@@ -120,8 +116,6 @@ r.times do |i|
     grid_item= grid_item.map { |s| s.to_i }
     grid[i] = grid_item
 end
-      
-puts grid.inspect
 
 m = grid
 draw(m)
