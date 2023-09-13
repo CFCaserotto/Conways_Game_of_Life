@@ -14,18 +14,7 @@ X O O
 O O X
 =end
 
-def make2DArray(cols,rows)
-    grid = Array.new(cols) { Array.new(rows, 'O')}
-    for x in 0...grid.length
-        for y in 0...grid[0].length
-            grid[x][y] = rand(2).floor()
-        end
-    end
-    return grid
-end
-
-# Function to check if a cell
-# (i, j) is valid or not
+# Function to check if a cell (i, j) is valid or not
 def valid(i, j, row,col)
     if (i >= 0 && j >= 0 && i < col && j < row)
         return true
@@ -33,8 +22,7 @@ def valid(i, j, row,col)
     return false
 end
  
-# Function to find sum of adjacent cells
-# for cell (i, j)
+# Function to find sum of adjacent cells for cell (i, j)
 def countNeighbors(i, j, v)
    # Store all 8 directions
     dir = [[1, 0], [-1, 0], [0, 1], [0, -1], [-1, -1], [-1, 1], [1, 1], [1, -1]]
